@@ -20,7 +20,7 @@ const now = new Date();
 const diffDays = Math.floor((now - lastSprintDate) / (1000 * 60 * 60 * 24));
 
 let [major, minor, patch] = packageJson.version.split('.').map(Number);
-
+console.log(`Last sprint: ${lastSprintDate.toISOString()}, Now: ${now.toISOString()}, DiffDays: ${diffDays}`);
 if (diffDays >= 15) {
   // Nuevo sprint: reinicia patch y aumenta minor
   //prueba

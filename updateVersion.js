@@ -6,7 +6,7 @@
 
 //update-version.js
 const fs = require('fs');
-const packageJson = JSON.parse(fs.readFileSync('/home/joseflorez/Documentos/Repos/conceptTest/package.json', 'utf8'));
+const packageJson = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
 
 const sprintDataPath = './sprint.json';
 let sprintData = { lastSprint: new Date().toISOString() };

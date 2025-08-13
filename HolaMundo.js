@@ -1,1 +1,2 @@
-const fileNew = "hola mundo";
+const fileNew = "hola mundo"
+// HolaMundo.js

@@ -21,7 +21,7 @@ const diffDays = Math.floor((now - lastSprintDate) / (1000 * 60 * 60 * 24));
 
 let [major, minor, patch] = packageJson.version.split('.').map(Number);
 
-if (diffDays >= 0) {
+if (diffDays >= 15) {
   // Nuevo sprint: reinicia patch y aumenta minor
   //prueba
 

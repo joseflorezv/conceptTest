@@ -23,12 +23,8 @@ let [major, minor, patch] = packageJson.version.split('.').map(Number);
 console.log(`Last sprint: ${lastSprintDate.toISOString()}, Now: ${now.toISOString()}, DiffDays: ${diffDays}`);
 if (diffDays >= 15) {
   // Nuevo sprint: reinicia patch y aumenta minor
-  //prueba
-
   patch = 0;
   minor += 1;
-  sprintData.lastSprint = now.toISOString();
-  fs.writeFileSync(sprintDataPath, JSON.stringify(sprintData, null, 2));
 } else {
   // Incrementa patch normalmente
   patch += 1;

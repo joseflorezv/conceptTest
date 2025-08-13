@@ -34,6 +34,8 @@ if (diffDays >= 15) {
   patch += 1;
 }
 
+//PRUEBA
+
 packageJson.version = `${major}.${minor}.${patch}`;
 fs.writeFileSync('./package.json', JSON.stringify(packageJson, null, 2));
 console.log(`Version updated to: ${packageJson.version}`);
